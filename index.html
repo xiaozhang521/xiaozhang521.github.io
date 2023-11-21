@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>个人介绍</title>
+    <title>About Me</title>
     <style>
         div {
         margin-left: 15%;
@@ -36,107 +36,113 @@
         <img src="./cv.jpg" alt="Personal photo", width=120px,  height=auto>
     </div>
 <div>
-    <h1>张裕浩</h1>
-    <h2>自然语言处理实验室 东北大学 沈阳</h2>
-    <p>机器翻译方向 博士四年级 </br> Email: yoohao.zhang@gmail.com</p>
-    <p>主要研究方向：<b>1.语音翻译，2.多任务学习，3.多语言神经机器翻译，4.模型加速。</b> 模型加速主要分为针对于底层张量并行计算库进行加速以及模型去冗余计算两个方向；多语言神经翻译方向主要利用一个模型翻译多个任务。目前已将论文及系统运用在IWLST，WMT等多个评测任务中并取得优异成绩。</p>
-    <h2>教育经历</h2>
+    <h1>Yuhao Zhang</h1>
+    <h2>Natural language processing lab, Northeastern university, Shenyang, China</h2>
+    <p> PhD student </br> Contact me: yoohao.zhang@gmail.com</p>
+    <p> Research interests: <b>Speech translation</b>, <b>Machine translation</b> and <b>Multi-task learning</b>.  </p>
+    <h2>Education experiments</h2>
     <dl>
-        <dt>2020.9 至今 </dt>
-        <dd>计算机科学与技术 博士研究生 东北大学 </dd>
-        <dd>东北大学自然语言处理实验室 导师：肖桐教授，朱靖波教授</dd>
+        <dt>2020.9 - now</dt>
+        <dd>Computer sinence and techolegy, PhD student at Northeastern university </dd>
+        <dd>NEU NLP lab, supervisors：Prof. XIAO Tong and Porf. ZHU Jingbo</dd>
+        <dd>Ph.D. project: Unified Cross-Modal Modeling for End-to-End Speech Translation</dd>
         <dt>2018.9-2020.7 </dt>
-        <dd>计算机软件与理论 硕士研究生 东北大学</dd>
-        <dd>东北大学自然语言处理实验室 导师：肖桐教授</dd>
+        <dd>Computer software and theory, Master student at Northeastern university</dd>
+        <dd>NEU NLP lab, supervisor：Prof. XIAO Tong</dd>
+        <dd>Thesis title: Research on Performance and Inference Speed Improvement for Multilingual Neural Machine Translation</dd>
         <dt>2014.9-2018.7  </dt>
-        <dd>计算机科学与技术 本科 东北大学</dd>
+        <dd>Computer sinence and techolegy, Bachelor student at Northeastern university</dd>
+        <dd>Thesis title: Fast Decoding Method and Implementation for Neural Machine Translation</dd>
       </dl>
  
 </div>
 
 
 <div>
-    <h2>学习经历 </h2>
+    <h2>Projects </h2>
     <table>
-    <tr><td><b>面向语音翻译的软对齐方法</b> (Under review)</td>   <td>2023.05-2023.09 </td></tr>
-    <tr><td>使用软对齐方式解决模态差异问题 </td></tr>
+    <tr><td><b>An end-to-end speech-to-text toolkit, NiuTrans.ST</b></td><td>2023.09- ······</td></tr>
+    <tr><td>The toolkit can achieve ASR, MT and ST three tasks. This toolkit is based on NiuTensor library and our goal is to achieve a high speed inference framework for speech-to-text generation.</td></tr>
+    <tr><td><b>Soft alignment method for end-to-end speech translation </b> (Submitted to ICASSP2023)</td>   <td>2023.05-2023.09 </td></tr>
+    <tr><td>In response to the challenge of inconsistent representation between speech and text modalities, we propose a soft alignment methodology within the representation space, leveraging an adversarial training strategy. This approach not only attains advanced performance in speech translation tasks but also accomplishes speech recognition, text translation, and speech translation tasks with one model. The achieved performance closely parallels that of the individual models.</td></tr>
 
-    <tr><td><b>面向语音识别的多尺度建模</b> (CCL2023)</td>   <td>2023.02-2023.05 </td></tr>
-    <tr><td>使用多尺度建模方式增强端到端语音识别编码，进而提升性能。 </td></tr>
+    <tr><td><b>An End-to-End Automatic Speech Recognition Method Based on Multi-scale Modeling</b> (CCL2023)</td>   <td>2023.02-2023.05 </td></tr>
+    <tr><td>We designed a multi-scale modeling method to align the original audio features to phonemes, characters and sub-words step by step, and then design a gated network to integrate multi-scale features. This method can effectively alleviate the modal gap caused by length inconsistency.</td></tr>
     
-    <tr><td><b>语音翻译评测任务</b> (IWSLT2023)</td>        <td>2023.02-2023.04</td> </tr>
-    <tr><td>参与IWSLT2023 离线英中端到端语音翻译比赛，主要运用了多任务学习策略、多轮伪数据方法和基于预训练的音频切分方法。 </td></tr>
+    <tr><td><b>End-to-end Speech Translation Evaluation</b> (IWSLT2023)</td>        <td>2023.02-2023.04</td> </tr>
+    <tr><td>We participated in the IWSLT 2023 English to Chinese offline end-to-end speech translation (constrained data) track. We mainly implement the multi-task leaning, multi-scale modeling, stacked acoustic-and-textual encoding and VAD based on SHAS. Our system ranked 1st in this track. </td></tr>
 
-    <tr><td><b>动态语音特征压缩</b> (Interspeech2023) </td> <td>   2022.05-2023.01</td> </tr>
-    <tr><td> 语音前端的特征压缩方法探索。</td></tr>
+    <tr><td><b>Information Magnitude Based Dynamic Sub-sampling for Speech-to-text </b> (Interspeech2023) </td> <td>   2022.05-2023.01</td> </tr>
+    <tr><td> We design a dynamic down-sampling strategy for audio frames to solve the problem of long speech sequences. We use the Gaussian mixture model to distinguish the magnitude of each frame and then dynamically design the sampling stride according to the order of magnitude. For speech translation and speech recognition tasks, this method can achieve a larger compression ratio without losing performance compared to static down-sampling.</td></tr>
 
-    <tr><td><b>语音翻译多任务学习</b> (Under review)  </td>                   <td>2022.06-2023.06 </td></tr>
-    <tr><td>多任务学习在语音翻译系统的探索。</td></tr>
+    <tr><td><b>Rethinking and Improving Multi-task Learning for End-to-end Speech Translation</b> (EMNLP2023)  </td>                   <td>2022.06-2023.06 </td></tr>
+    <tr><td>Based on the quantitative analysis of the effect and time of the interaction between speech and other auxiliary tasks, it is found that the length gap between speech and text modalities hinders the learning effect of the alignment method. Additionally, the difference between speech and text representations is still significant. In light of these phenomena, we design the lookback mechanism and the local-to-global training method to improve performance and achieve the state-of-the-art (SOTA) performance under limited data.</td></tr>
 
-    <tr><td><b>语音翻译评测任务</b> (IWSLT2022) </td>                        <td>   2022.02-2022.05 </td></tr>
-    <tr><td>参与IWSLT2022 离线英中端到端语音翻译比赛，主要运用了SATE 和 MSP-ST方法。 </td></tr>
+    <tr><td><b>End-to-end Speech Translation Evaluation</b> (IWSLT2022) </td>                        <td>   2022.02-2022.05 </td></tr>
+    <tr><td>We participated in the offline end-to-end English-Chinese speech translation task, mainly using the decoupling pre-training method, multi-stage pre-training method, and multi-view fusion method. We further combined the strategies of VAD consistency training and model ensemble. </td></tr>
 
-    <tr><td><b>语音翻译预训练</b> (AAAI2023) </td>                      <td>  2021.03-2021.11 </td></tr>
-    <tr><td>探索如有利用无标注的文本和语音数据及有标注的语音识别和翻译数据构建端到端语音翻译系统。论文主要在腾讯北京信息安全部门实习期间完成。 </td></tr>
+    <tr><td><b>Improving end-to-end speech translation by leveraging auxiliary speech and text data</b> (AAAI2023) </td>                      <td>  2021.03-2021.11 </td></tr>
+    <tr><td>In order to address the problem of data scarcity for end-to-end speech translation training, we propose a multi-stage pre-training strategy to build speech translation system. Our method can use all types of unlabeled and labeled text data, as well as speech data, which achieves a new state-of-the-art performance. The work was partially completed during the internship at Information Security Department of Tencent.</td></tr>
 
-    <tr><td><b>小设备模型运算库支持</b></td>                             <td> 2020.11-2020.12 </td></tr>
-    <tr><td>将NiuTensor计算应用到ARM架构GPU上，利用ARM computing library中的OpenCL 接口改写NiuTensor中的操作，并在Mali架构的芯片上运行。 </td></tr>
+    <tr><td><b>Stacked acoustic-and-textual encoding: Integrating the pre-trained models into speech translation encoders</b> (ACL2021)</td>                             <td> 2020.09-2021.01 </td></tr>
+    <tr><td>Aiming to address the issue of unstable training in the end-to-end speech translation model, we propose a decoupling pre-training method to separately pre-train the speech recognition model and the text translation model. Subsequently, an adapter is employed to facilitate the integration of the two. We first achieve performance where the end-to-end system outperforms the cascade system under conditions of limited data. </td></tr>
 
-    <tr><td><b>多语言模型迁移量化分析</b> (Under review) </td>           <td> 2020.06-2021.03 </td></tr>
-    <tr><td>在多语言模型中量化不同语言迁移情况并采取策略优化。</td> </tr>
+    <tr><td><b>Tensor computing library towards offline device</b></td>                             <td> 2020.11-2020.12 </td></tr>
+    <tr><td>We use the OpenCL interface in the ARM Computing Library to rewrite the operations in NiuTensor and run them on the Mali architecture chip. The system has been applied to the Translation Pen Scanner. </td></tr>
 
-    <tr><td><b>机器翻译评测任务</b> (WMT2020)</td>                          <td>2020.03-2020.05 </td></tr>
-    <tr><td>带队参加三个富资源任务（英日，日英，英中），以及两个稀缺资源任务（泰米尔语到英语，因纽特到英语）。其中英日，日英获得自动评价第一名，英日，因纽特语获得人工评价第一名。</br>
-        主要运用的技术为:多语言模型，大容量模型，迭代finetune策略，Top-p采样生成伪数据生成策略，利用语言模型进行领域适应等。 </td></tr>
+    <tr><td><b>Quantifying Transfer Learning for Multilingual Neural Machine Translation</b> (Under review) </td>           <td> 2020.06-2021.03 </td></tr>
+    <tr><td>We conduct a quantitative analysis of the interference and transfer of rich resources and low resources in the multilingual translation model, and we find that the transfer process mainly occurs in the early training stage, while the interference is primarily in the later stage.</td> </tr>
 
-    <tr><td><b>结构搜索</b> (ACL2020)</td>                                <td>2019.10-2019.12 </td></tr>
-    <tr><td>将神经结构搜索应用到神经机器翻译上。具体为：利用可微分的方法在语言模型上预训练好一个CELL内部和CELL之间的结构，然后将结构运用到神经机器翻译任务上。</br>
-        主要在IWSLT英语到越南语任务上获得性能提升。 </td></tr>
+    <tr><td><b>Machine Translation Evaluation</b> (WMT2020)</td>                          <td>2020.03-2020.05 </td></tr>
+    <tr><td>We participate in three rich resource tasks (English to/from Japanese, English to Chinese) and two low resource tasks (Tamil to English and Inuktitut to English). Our training strategies include using a multi-language model, a large-capacity model, iterative fine-tuning, generating pseudo-data by Top-p sampling, domain adaptation with a pre-trained language model, and so on. Among them, English to/from Japanese ranks first in automatic evaluation; English to Japanese and Inuktitut to English win first place in manual evaluation.  </td></tr>
 
-    <tr><td><b>神经机器翻译解码加速</b> (CCMT2019) </td>                   <td>2019.06-2019.08 </td></tr>
-    <tr><td>对于Transformer模型中解码计算过程中解码端的注意力计算进行加速，具体为，利用模型中每一层的注意力分布计算其信息熵作为其所含信息量，发现各层信息量差异较大。</br>
-        根据这种现象设计压缩比例对解码端注意力计算的参数进行压缩，在不影响性能的前提下，提升约10%的解码速度。</td></tr>
+    <tr><td><b>Learning architectures from an extended search space for language modeling</b> (ACL2020)</td>                                <td>2019.10-2019.12 </td></tr>
+    <tr><td>We apply the neural structure search method to the neural machine translation task. Initially, we use the differentiable method (e.g., DARTS) to search for a structure between the inner-CELL and intra-CELL on the language model task. Subsequently, we apply this structure to the task of neural machine translation. The experimental results show that the searched structure improves the performance of the IWSLT English-to-Vietnamese tasks. </td></tr>
+
+    <tr><td><b>Inference acceleration method of neural machine translation system based on coarse-to-fine</b> (CCMT2019) </td>                   <td>2019.06-2019.08 </td></tr>
+    <tr><td>We accelerate the attention operation in the inference of the Transformer model. We utilize the attention distribution of each layer in the model and calculate its information entropy as the amount of information contained in each layer. We found that the amount of information in each layer is different, but the amount of calculation is consistent. Therefore, we design a coarse-to-fine method to compress the parameters of attention calculation and improve the decoding speed by about 10% without performance degradation.</td></tr>
     
-    <tr><td><b>机器翻译评测任务</b> (WMT2019)</td>                         <td>2019.02-2019.04 </td></tr>
-    <tr><td>负责古吉拉特与到英语的翻译任务，利用迁移学习，语言语法特点，多种回译方法，ensemble搜索策略，多特征重排序，模型上利用DLCL深层网络。获得自动评价，人工评价第一名。</td></tr>
+    <tr><td><b>Machine Translation Evaluation</b> (WMT2019)</td>                         <td>2019.02-2019.04 </td></tr>
+    <tr><td>We participated in the Gujarati-to-English translation task, primarily using transfer learning, linguistic prior knowledge, back-translation with diversity, ensemble search, re-ranking based on multi-feature, and the DLCL deep network. Our system ranked first in automatic evaluation and manual evaluation.</td></tr>
 
-    <tr><td><b>NiuTensor深度学习开源底层计算库</b></td>                    <td>2018.1-至今 </td></tr>
-    <tr><td>1.针对于底层的CUDA计算更新维护。2.多卡训练支持。3.小设备计算支持。</br>
-    4.神经机器翻译运算库加速，设计针对于GPU的并行计算算法以及针对不同张量设计不同存取的算法以及指令集优化。</td></tr>
-    <tr><td>项目地址：<a href="https://github.com/NiuTrans/NiuTensor">https://github.com/NiuTrans/NiuTensor</a></td></tr>
+    <tr><td><b>NiuTensor Deep Learning Open Source Computing Library</b></td>                    <td>2018.1- ······ </td></tr>
+    <tr><td> We have developed an efficient tensor computing library (similar to TensorFlow or PyTorch), named  NiuTensor which is based on C++ and CUDA. Its main features are as follows: 1. Developlow-level high-efficiency CUDA operators; 2. Support speech-to-text tasks and text generation tasks; 3. Support Mobile device; 4. Optimize neural machine translation operation inference (kernel fusion, high concurrency algorithm based on GPU). The project has been applied to the online system of NiuTrans. </td></tr>
+    <tr><td>Project website: <a href="https://github.com/NiuTrans/NiuTensor">https://github.com/NiuTrans/NiuTensor</a></td></tr>
     </table>   
 </div>
 
 <div>
-<h2>论文成果</h2>
-1. Improving End-to-end Speech Translation by Leveraging Auxiliary Speech and Text Data. <b>Yuhao Zhang</b>, Chen Xu, Bojie Hu, Chunliang Zhang, Tong Xiao, Jingbo Zhu. AAAI2023. </br>
-2. Information Magnitude Based Dynamic Sub-sampling for Speech-to-text. <b>Yuhao Zhang</b>, Chenghao Gao, Kaiqi Kou, Chen Xu, Tong Xiao, Jingbo Zhu. Interspeech2023. </br>
-3. The NiuTrans’s Submission to the IWSLT22 English-to-Chinese Offline Speech Translation Task. <b>Yuhao Zhang</b>, Canan Huang, Chen Xu, Xiaoqian Liu, Bei Li, Anxiang Ma, Tong Xiao, Jingbo Zhu. IWSLT2022. </br>
-4. The NiuTrans Machine Translation Systems for WMT20. <b>Yuhao Zhang</b>, Ziyang Wang, Runzhe Cao.et.al. WMT2020. </br>
-5. 从粗粒度到细粒度神经机器翻译推断加速方法研究。<b>张裕浩</b>，许诺，李垠桥，肖桐，朱靖波。CCMT2019. </br>
-6. Bridging the Granularity Gap for Acoustic Modeling. Chen Xu, <b>Yuhao Zhang</b>, Chengbo Jiao, Xiaoqian Liu, Chi Hu, Xin Zeng, Tong Xiao, Anxiang Ma, Huizhen Wang, JingBo Zhu. ACL2023 findings.</br>
-7. 基于多尺度建模的端到端自动语音识别方法。陈昊，张润来，<b>张裕浩</b>，高成浩，许晨，马安香，肖桐，朱靖波。CCL2023. </br>
-8. Stacked Acoustic-and-Textual Encoding: Integrating the Pre-trained Models into Speech Translation Encoders. Chen Xu, Bojie Hu, Yanyang Li, <b>Yuhao Zhang</b>, Shen Huang, Qi Ju, Tong Xiao, Jingbo Zhu. ACL2021. </br>
-9. Learning Architectures from an Extended Search Space for Language Modeling. Yinqiao Li, Chi Hu, <b>Yuhao Zhang</b>, Nuo Xu, Yufan Jiang, Tong Xiao, Jingbo Zhu, Tongran Liu, Changliang Li. ACL2020. </br>
-10. CTC-based Non-autoregressive Speech Translation. Chen Xu, Xiaoqian Liu, Xiaowen Liu, Qingxuan Sun, <b>Yuhao Zhang</b>, Murun Yang, Qianqian Dong, Tom Ko, Mingxuan Wang, Tong Xiao, Anxiang Ma, Jingbo Zhu. ACL2023</br>
-11. The NiuTrans End-to-End Speech Translation System for IWSLT23 English-to-Chinese Offline Task. Yuchen Han, Xiaoqian Liu, Hao Chen, <b>Yuhao Zhang</b>, Chen Xu, Tong Xiao, Jingbo Zhu</br>
+<h2>Publications</h2>
+1. Rethinking and Improving Multi-task Learning for End-to-end Speech Translation. <b>Yuhao Zhang</b>, Chen Xu, Bei Li, Hao Chen, Tong Xiao, Chunliang Zhang, and Jingbo Zhu. EMNLP2023. </br>
+2. Improving End-to-end Speech Translation by Leveraging Auxiliary Speech and Text Data. <b>Yuhao Zhang</b>, Chen Xu, Bojie Hu, Chunliang Zhang, Tong Xiao, Jingbo Zhu. AAAI2023. </br>
+3. Information Magnitude Based Dynamic Sub-sampling for Speech-to-text. <b>Yuhao Zhang</b>, Chenghao Gao, Kaiqi Kou, Chen Xu, Tong Xiao, Jingbo Zhu. Interspeech2023. </br>
+4. The NiuTrans’s Submission to the IWSLT22 English-to-Chinese Offline Speech Translation Task. <b>Yuhao Zhang</b>, Canan Huang, Chen Xu, Xiaoqian Liu, Bei Li, Anxiang Ma, Tong Xiao, Jingbo Zhu. IWSLT2022. </br>
+5. The NiuTrans Machine Translation Systems for WMT20. <b>Yuhao Zhang</b>, Ziyang Wang, Runzhe Cao.et.al. WMT2020. </br>
+6. Inference acceleration method of neural machine translation system based on coarse-to-fine <b>Yuhao Zhang</b>, Nuo Xu, Yinqiao Li, Tong Xiao, Jingbo Zhu. CCMT2019. </br>
+7. Bridging the Granularity Gap for Acoustic Modeling. Chen Xu, <b>Yuhao Zhang</b>, Chengbo Jiao, Xiaoqian Liu, Chi Hu, Xin Zeng, Tong Xiao, Anxiang Ma, Huizhen Wang, JingBo Zhu. ACL2023 findings.</br>
+8. An End-to-End Automatic Speech Recognition Method Based on Multiscale Modeling. Chen Hao, Runlai Zhang, <b>Yuhao Zhang</b>, Chenghao Gao, Chen Xu, Anxiang Ma, Tong Xiao, Jingbo Zhu. CCL2023. </br>
+9. Stacked Acoustic-and-Textual Encoding: Integrating the Pre-trained Models into Speech Translation Encoders. Chen Xu, Bojie Hu, Yanyang Li, <b>Yuhao Zhang</b>, Shen Huang, Qi Ju, Tong Xiao, Jingbo Zhu. ACL2021. </br>
+10. Learning Architectures from an Extended Search Space for Language Modeling. Yinqiao Li, Chi Hu, <b>Yuhao Zhang</b>, Nuo Xu, Yufan Jiang, Tong Xiao, Jingbo Zhu, Tongran Liu, Changliang Li. ACL2020. </br>
+11. CTC-based Non-autoregressive Speech Translation. Chen Xu, Xiaoqian Liu, Xiaowen Liu, Qingxuan Sun, <b>Yuhao Zhang</b>, Murun Yang, Qianqian Dong, Tom Ko, Mingxuan Wang, Tong Xiao, Anxiang Ma, Jingbo Zhu. ACL2023</br>
+12. The NiuTrans End-to-End Speech Translation System for IWSLT23 English-to-Chinese Offline Task. Yuchen Han, Xiaoqian Liu, Hao Chen, <b>Yuhao Zhang</b>, Chen Xu, Tong Xiao, Jingbo Zhu</br>
 <a href="https://scholar.google.com/citations?hl=zh-CN&user=p3Om2OcAAAAJ">Google scholar</a>
 </div>
 
 <div>
-<h2>获奖概览</h2>
+<h2>Awards</h2>
 <ul>
-    <li>WMT19 古吉拉特语到英语 自动评价第一名，人工评价第一名</li>
-    <li>WMT20英语到日语 自动评价第一名，人工评价第一名 </li>
-    <li>WMT20日语到英语 自动评价第一名，人工评价第二名</li>
-    <li>WMT20因纽特到英语 自动评价第三名，人工评价第一名</li>
-    <li>IWSLT22英语到中文离线语音翻译 自动评价第三名</li>
-    <li>IWSLT23英语到中文端到端受限离线语音翻译 自动评价第一名</li>
-    <li>CCMT2019最佳中文论文提名</li>
-    <li>CCL2023最佳海报展示奖</li>
-    <li>2018年计算机学院优秀毕业设计（排名第一）</li>
+    <li>1st, IWSLT23 English to Chinese Offline End-to-End speech translation track (Constrained data).</li>
+    <li>3rd, IWSLT22 English to Chinese Offline End-to-End speech translation track.</li>
+    <li>1st, WMT20 Japanese to/from English news translation track. </li>
+    <li>1st, WMT20 Inuktitut to English news translation track (Human evaluation). </li>
+    <li>1st, WMT19 Gujarati to English news translation track. </li>
+    <li>Outstanding doctoral candidate. Awarded by Northeastern university.</li>
+    <li>Best poster presentation award. Awarded by CCL2023.</li>
+    <li>Best Chinese paper award (Honorable Mentions). Awarded by CCMT2019.</li>
+    <li>Outstanding graduation thesis (1st). Awarded by School of Computer Science and Technology, Northeastern university.</li>
 </ul>
 
 </div>
+<p align=center><a href="./index-Chinese.html">中文</a></p>
 </body>
 </html>
