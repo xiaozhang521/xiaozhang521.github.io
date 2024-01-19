@@ -29,6 +29,34 @@
             float: right;
             text-align: right;
         }
+        a {
+          outline: none;
+          text-decoration: none;
+          padding: 2px 1px 0;
+        }
+        
+        a:link {
+          color: #265301;
+        }
+        
+        a:visited {
+          color: #437a16;
+        }
+        
+        a:focus {
+          border-bottom: 1px solid;
+          background: #bae498;
+        }
+        
+        a:hover {
+          border-bottom: 1px solid;
+          background: #cdfeaa;
+        }
+        
+        a:active {
+          background: #265301;
+          color: #cdfeaa;
+        }
         </style>
 </head>
 <body>
@@ -38,7 +66,7 @@
 <div>
     <h1>张裕浩</h1>
     <h2>自然语言处理实验室 东北大学 沈阳</h2>
-    <p>机器翻译方向 博士四年级 </br> Email: yoohao.zhang@gmail.com</p>
+    <p>机器翻译方向 博士四年级 &nbsp;&nbsp;&nbsp;&nbsp; <a href="https://scholar.google.com/citations?hl=zh-CN&user=p3Om2OcAAAAJ">Google scholar</a> </br> Email: yoohao.zhang@gmail.com</p>
     <p>主要研究方向：<b>1.语音翻译，2.多任务学习，3.多语言神经机器翻译，4.模型加速。</b> 模型加速主要分为针对于底层张量并行计算库进行加速以及模型去冗余计算两个方向；多语言神经翻译方向主要利用一个模型翻译多个任务。目前已将论文及系统运用在IWLST，WMT等多个评测任务中并取得优异成绩。</p>
     <p>曾多次担任NeurIPS、ACL、AAAI、EMNLP、ICASSP等会议的评审。</p>
     <h2>教育经历</h2>
@@ -55,7 +83,25 @@
  
 </div>
 
-
+<div>
+    <h2>论文成果</h2>
+    1. <a href="https://arxiv.org/pdf/2312.10952.pdf", target="_blank">Soft Alignment of Modality Space for End-to-end Speech Translation.</a> <b>Yuhao Zhang</b>, Kaiqi Kou, Bei Li, Chen Xu, Chunliang Zhang, Tong Xiao, Jingbo Zhu. <b>ICASSP2024</b>. </br>
+    2. <a href="https://arxiv.org/pdf/2311.03810.pdf",target="_blank">Rethinking and Improving Multi-task Learning for End-to-end Speech Translation.</a> <b>Yuhao Zhang</b>, Chen Xu, Bei Li, Hao Chen, Tong Xiao, Chunliang Zhang, and Jingbo Zhu. <b>EMNLP2023</b>. </br>
+    3. <a href="https://arxiv.org/pdf/2212.01778.pdf",target="_blank">Improving End-to-end Speech Translation by Leveraging Auxiliary Speech and Text Data.</a> <b>Yuhao Zhang</b>, Chen Xu, Bojie Hu, Chunliang Zhang, Tong Xiao, Jingbo Zhu. <b>AAAI2023</b>. </br>
+    4. <a href="https://www.isca-speech.org/archive/pdfs/interspeech_2023/zhang23u_interspeech.pdf",target="_blank">Information Magnitude Based Dynamic Sub-sampling for Speech-to-text.</a> <b>Yuhao Zhang</b>, Chenghao Gao, Kaiqi Kou, Chen Xu, Tong Xiao, Jingbo Zhu. <b>INTERSPEECH2023</b>. </br>
+    5. <a href="https://aclanthology.org/2022.iwslt-1.19.pdf",target="_blank">The NiuTrans’s Submission to the IWSLT22 English-to-Chinese Offline Speech Translation Task.</a> <b>Yuhao Zhang</b>, Canan Huang, Chen Xu, Xiaoqian Liu, Bei Li, Anxiang Ma, Tong Xiao, Jingbo Zhu. <b>IWSLT2022</b>. </br>
+    6. <a href="https://aclanthology.org/2020.wmt-1.37.pdf",target="_blank">The NiuTrans Machine Translation Systems for WMT20.</a> <b>Yuhao Zhang</b>, Ziyang Wang, Runzhe Cao.et.al. <b>WMT2020</b>. </br>
+    7. <a href="https://jxmu.xmu.edu.cn/#/digest?ArticleID=4390",target="_blank">从粗粒度到细粒度神经机器翻译推断加速方法研究。</a> <b>张裕浩</b>，许诺，李垠桥，肖桐，朱靖波。<b>CCMT2019</b>. </br>
+    8. <a href="https://arxiv.org/pdf/2309.12234.pdf",target="_blank">Bridging the Gaps of Both Modality and Language: Synchronous Bilingual CTC for Speech Translation and Speech Recognition.</a> Chen Xu, Xiaoqian Liu, Erfeng He, <b>Yuhao Zhang</b>, Qianqian Dong, Tong Xiao, Jingbo Zhu, Dapeng Man, Wu Yang. <b>ICASSP2024</b>. </br>
+    9. <a href="https://arxiv.org/pdf/2305.17356.pdf",target="_blank">Bridging the Granularity Gap for Acoustic Modeling.</a> Chen Xu, <b>Yuhao Zhang</b>, Chengbo Jiao, Xiaoqian Liu, Chi Hu, Xin Zeng, Tong Xiao, Anxiang Ma, Huizhen Wang, JingBo Zhu. <b>ACL2023</b> findings.</br>
+    10. <a href="https://aclanthology.org/2023.ccl-1.41.pdf",target="_blank">基于多尺度建模的端到端自动语音识别方法。</a> 陈昊，张润来，<b>张裕浩</b>，高成浩，许晨，马安香，肖桐，朱靖波。<b>CCL2023</b>. </br>
+    11. <a href="https://arxiv.org/pdf/2105.05752.pdf",target="_blank">Stacked Acoustic-and-Textual Encoding: Integrating the Pre-trained Models into Speech Translation Encoders.</a> Chen Xu, Bojie Hu, Yanyang Li, <b>Yuhao Zhang</b>, Shen Huang, Qi Ju, Tong Xiao, Jingbo Zhu. <b>ACL2021</b>. </br>
+    12. <a href="https://aclanthology.org/2020.acl-main.592.pdf",target="_blank">Learning Architectures from an Extended Search Space for Language Modeling.</a> Yinqiao Li, Chi Hu, <b>Yuhao Zhang</b>, Nuo Xu, Yufan Jiang, Tong Xiao, Jingbo Zhu, Tongran Liu, Changliang Li. <b>ACL2020</b>. </br>
+    13. <a href="https://aclanthology.org/2023.acl-long.744.pdf",target="_blank">CTC-based Non-autoregressive Speech Translation.</a> Chen Xu, Xiaoqian Liu, Xiaowen Liu, Qingxuan Sun, <b>Yuhao Zhang</b>, Murun Yang, Qianqian Dong, Tom Ko, Mingxuan Wang, Tong Xiao, Anxiang Ma, Jingbo Zhu. <b>ACL2023</b>.</br>
+    14. <a href="https://aclanthology.org/2023.iwslt-1.17.pdf",target="_blank">The NiuTrans End-to-End Speech Translation System for IWSLT23 English-to-Chinese Offline Task.</a> Yuchen Han, Xiaoqian Liu, Hao Chen, <b>Yuhao Zhang</b>, Chen Xu, Tong Xiao, Jingbo Zhu. <b>IWSLT2023</b>.</br>
+    15. <a href="https://aclanthology.org/W19-5325.pdf",target="_blank">The NiuTrans machine translation systems for WMT19.</a> Bei Li, Yinqiao Li, Chen Xu, Ye Lin, Jiqiang Liu, Hui Liu, Ziyang Wang, <b>Yuhao Zhang</b>, et al. <b>WMT2019</b>.</br>
+</div>
+    </div>
 <div>
     <h2>学习经历 </h2>
     <table>
@@ -106,26 +152,6 @@
     4.神经机器翻译运算库加速，设计针对于GPU的并行计算算法以及针对不同张量设计不同存取的算法以及指令集优化。</td></tr>
     <tr><td>项目地址：<a href="https://github.com/NiuTrans/NiuTensor">https://github.com/NiuTrans/NiuTensor</a></td></tr>
     </table>   
-</div>
-
-<div>
-<h2>论文成果</h2>
-1. Soft Alignment of Modality Space for End-to-end Speech Translation. <b>Yuhao Zhang</b>, Kaiqi Kou, Bei Li, Chen Xu, Chunliang Zhang, Tong Xiao, Jingbo Zhu. ICASSP2024. </br>
-2. Rethinking and Improving Multi-task Learning for End-to-end Speech Translation. <b>Yuhao Zhang</b>, Chen Xu, Bei Li, Hao Chen, Tong Xiao, Chunliang Zhang, and Jingbo Zhu. EMNLP2023. </br>
-3. Improving End-to-end Speech Translation by Leveraging Auxiliary Speech and Text Data. <b>Yuhao Zhang</b>, Chen Xu, Bojie Hu, Chunliang Zhang, Tong Xiao, Jingbo Zhu. AAAI2023. </br>
-4. Information Magnitude Based Dynamic Sub-sampling for Speech-to-text. <b>Yuhao Zhang</b>, Chenghao Gao, Kaiqi Kou, Chen Xu, Tong Xiao, Jingbo Zhu. Interspeech2023. </br>
-5. The NiuTrans’s Submission to the IWSLT22 English-to-Chinese Offline Speech Translation Task. <b>Yuhao Zhang</b>, Canan Huang, Chen Xu, Xiaoqian Liu, Bei Li, Anxiang Ma, Tong Xiao, Jingbo Zhu. IWSLT2022. </br>
-6. The NiuTrans Machine Translation Systems for WMT20. <b>Yuhao Zhang</b>, Ziyang Wang, Runzhe Cao.et.al. WMT2020. </br>
-7. 从粗粒度到细粒度神经机器翻译推断加速方法研究。<b>张裕浩</b>，许诺，李垠桥，肖桐，朱靖波。CCMT2019. </br>
-8. Bridging the Gaps of Both Modality and Language: Synchronous Bilingual CTC for Speech Translation and Speech Recognition. Chen Xu, Xiaoqian Liu, Erfeng He, <b>Yuhao Zhang</b>, Qianqian Dong, Tong Xiao, Jingbo Zhu, Dapeng Man, Wu Yang. ICASSP2024. </br>
-9. Bridging the Granularity Gap for Acoustic Modeling. Chen Xu, <b>Yuhao Zhang</b>, Chengbo Jiao, Xiaoqian Liu, Chi Hu, Xin Zeng, Tong Xiao, Anxiang Ma, Huizhen Wang, JingBo Zhu. ACL2023 findings.</br>
-10. 基于多尺度建模的端到端自动语音识别方法。陈昊，张润来，<b>张裕浩</b>，高成浩，许晨，马安香，肖桐，朱靖波。CCL2023. </br>
-11. Stacked Acoustic-and-Textual Encoding: Integrating the Pre-trained Models into Speech Translation Encoders. Chen Xu, Bojie Hu, Yanyang Li, <b>Yuhao Zhang</b>, Shen Huang, Qi Ju, Tong Xiao, Jingbo Zhu. ACL2021. </br>
-12. Learning Architectures from an Extended Search Space for Language Modeling. Yinqiao Li, Chi Hu, <b>Yuhao Zhang</b>, Nuo Xu, Yufan Jiang, Tong Xiao, Jingbo Zhu, Tongran Liu, Changliang Li. ACL2020. </br>
-13. CTC-based Non-autoregressive Speech Translation. Chen Xu, Xiaoqian Liu, Xiaowen Liu, Qingxuan Sun, <b>Yuhao Zhang</b>, Murun Yang, Qianqian Dong, Tom Ko, Mingxuan Wang, Tong Xiao, Anxiang Ma, Jingbo Zhu. ACL2023</br>
-14. The NiuTrans End-to-End Speech Translation System for IWSLT23 English-to-Chinese Offline Task. Yuchen Han, Xiaoqian Liu, Hao Chen, <b>Yuhao Zhang</b>, Chen Xu, Tong Xiao, Jingbo Zhu. IWSLT2023.</br>
-15. The niutrans machine translation systems for wmt19. Bei Li, Yinqiao Li, Chen Xu, Ye Lin, Jiqiang Liu, Hui Liu, Ziyang Wang, <b>Yuhao Zhang</b>, et al. WMT2019.</br>
-<a href="https://scholar.google.com/citations?hl=zh-CN&user=p3Om2OcAAAAJ">Google scholar</a>
 </div>
 
 <div>
